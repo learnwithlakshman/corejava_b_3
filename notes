@@ -125,4 +125,12 @@ keyword:
   
  https://git-scm.com/downloads
  
+ git commands:
+ 
+ git add .
+ git commit -m "Message"
+ git remote add origin https://github.com/learnwithlakshman/corejava_b_3.git
+ git push -u origin master
+ 
+ git clone  https://github.com/learnwithlakshman/corejava_b_3.git
  
