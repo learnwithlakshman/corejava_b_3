@@ -134,3 +134,14 @@ keyword:
  
  git clone  https://github.com/learnwithlakshman/corejava_b_3.git
  
+
+ Set git user details:
+ 
+ learnwithlakshman@gmail.com
+ https://jsltech.blogspot.com/
+ 
+ 
+ git config --global user.name "John Doe"
+ git config --global user.email johndoe@example.com
+ 
+ 
