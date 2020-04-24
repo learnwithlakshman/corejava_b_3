@@ -144,4 +144,23 @@ keyword:
  git config --global user.name "John Doe"
  git config --global user.email johndoe@example.com
  
+ Sequential 
+ Conditional : if,if-else, if-else if-else
+ Iterative 
+ Selection 
+ 
+ 3 numbers and find sum and average
+ 
+ num1
+ num2
+ num3
+ 
+ sum = num1 + num2 + num3;
+ avg = sum / 3;
+ 
+ 
+ 
+ 
+ 
+ 
  
