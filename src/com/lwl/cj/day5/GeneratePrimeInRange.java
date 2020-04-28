@@ -7,6 +7,7 @@ public class GeneratePrimeInRange {
 			int lb = sc.nextInt();
 			System.out.println("Enter the ub value:");
 			int ub = sc.nextInt();
+			
 			for(int k=lb;k<=ub;k++) {
 				int num = k;
 				boolean flag = true;
