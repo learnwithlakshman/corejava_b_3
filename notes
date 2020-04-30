@@ -243,4 +243,8 @@ while(i <= n ){
 	i++;
 }
  
+.gitignore
+
+/bin
+/bin/*
  
