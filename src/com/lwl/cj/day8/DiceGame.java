@@ -15,11 +15,10 @@ public class DiceGame {
 				System.out.println("You guessed number in " + i + " attempts");
 				break;
 			} else {
+				System.out.println("Sorry! it is wrong guess");
 				if (i == 3) {
-					System.out.println("Sorry! you reached max number of attempts...");
+					System.out.println("You have reached max number of attempts...");
 					break;
-				} else {
-					System.out.println("Sorry! it is wrong guess try again...");
 				}
 			}
 
