@@ -248,10 +248,24 @@ while(i <= n ){
 /bin
 /bin/*
 
+https://docs.oracle.com/javase/tutorial/java/data/strings.html
 
+https://jsltech.blogspot.com/search?q=arrays
 
+https://docs.oracle.com/javase/8/docs/api/
 
+String:
 
+https://jsltech.blogspot.com/2011/12/string-stringbuffer-final.html
+
+== Operator
+equals()
+
+ => java.lang.Object
+
+StringBuffer and Builder
+Enum
+final
 
 
 
