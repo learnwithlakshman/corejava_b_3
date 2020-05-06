@@ -1,0 +1,9 @@
+empno,name,age
+1001,Krish,35
+1002,Kiran,50
+1003,Mahesh,48
+1004,Pradeep,23
+1005,Amala,22
+1006,Charan,33
+1007,Kaml,31
+1008,John,24
