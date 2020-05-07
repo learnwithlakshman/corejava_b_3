@@ -266,7 +266,24 @@ equals()
 StringBuffer and Builder
 Enum
 final
+   used variables/local variable
+   method : No overriding 
+   class  : No Inheritance
+   reference: It can't assigned with new object, but content can modified 
+ 
+static
 
+OOP
+Exceptions
+IO
+Inner Class
+Lambda
+Collection
+List, Set, Map, Streams
+Reflection
+Threads
+JDBC
 
+https://jsltech.blogspot.com/2014/08/java-programming-interview-questions.html
 
  
