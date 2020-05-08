@@ -274,6 +274,28 @@ final
 static
 
 OOP
+
+Class:
+     It is blue print or Template 
+Object:
+     An instance of the class is called Object
+     
+.java
+     import : java.lang.*;
+     Extends : java.lang.Object
+ 
+ What is constructor ?
+  - Special method, whose name same as class name
+  - There is no return type (void also shouldn't written)
+  - It can't be called explicitly, it is called by the JVM by using new keyword
+  - It is called only once for the Object
+  - If there no user defined constructor in the class then java compiler provides default constructor
+  - Class can any number constructors with different param list, this is called constructor overloading 
+  
+  
+https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html   
+     
+
 Exceptions
 IO
 Inner Class
