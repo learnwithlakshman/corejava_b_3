@@ -302,6 +302,19 @@ Object:
    3. Types of params 
    
   
+  IIB
+  Static
+  
+  Interface
+  Abstract class
+  
+  
+  
+  
+  
+  overriding:
+   1. Can't reduce visibility, it should same or less restrictive access specifier  
+  
   java.lang.Object
   
 https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html   
