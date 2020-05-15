@@ -297,11 +297,16 @@ Object:
   this(): used to call constructor of the same class with different param list from another constructor
   
   Overloading:
-   1. No of params
-   2. Order of params
-   3. Types of params 
-   
+   No of params or Order of params or Types of params  must be different
+   It doesn't care about access specifier
+   It doesn't care about about exception
+   It doesn't care about return type
   
+  Overriding:
+  	1.    No of params or Order of params or Types of params  must be same
+  	2. Access specifier should be same or less restrective 
+  	3. Return type must be same except co-varient
+  	
   IIB
   Static
   
