@@ -310,7 +310,11 @@ Object:
   IIB
   Static
   
-  Interface
+  Interface:
+  
+  functional 
+  marker interface
+  lambda  
   Abstract class
   
   
