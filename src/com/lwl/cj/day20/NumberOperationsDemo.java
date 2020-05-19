@@ -36,6 +36,7 @@ class NumberOpesImpl implements NumberOpes{
 	
 }
 
+
 public class NumberOperationsDemo {
 
 		public static void main(String[] args) {

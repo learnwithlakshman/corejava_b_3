@@ -312,9 +312,13 @@ Object:
   
   Interface:
   
-  functional 
   marker interface
+  functional 
   lambda  
+  
+  https://www.baeldung.com/java-8-functional-interfaces
+  
+  
   Abstract class
   
   
