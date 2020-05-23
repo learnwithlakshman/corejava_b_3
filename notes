@@ -329,8 +329,59 @@ Object:
   throw
   throws
   finally
-  
+ 1. 
+   Question:
    
+   int countPalindromes(String name){
+       
+   }
+   
+   tanvi
+   t a n v i ta tan tanv tanvi, an anv,anvi, nv, nvi,vi
+  
+ 2.
+  Get unique sub string:
+  
+  
+  String input: baca
+  
+  b,ba,bac,baca,a,ac,aca,ca,a  => unique ...
+  
+ 3. 
+  product information:
+ 
+ Input:
+ [ [1001,XYX,56789],[1002,XAYX,9789],[1002,XYX,56789],[1003,XYB,6789],[1005,XYXA,6789]];
+ 
+ size:  3
+ field: 2
+ 
+ field
+ 
+ 1-id
+ 2-name
+ 3-price
+
+output:
+ 
+   XYX 
+   XAYX
+   XYX
+
+ public String[] getElementInOrder(String[][] data,int size, int field){
+ 
+ 
+ }
+ 
+ 
+ 
+ 
+  
+  
+  
+  
+  
+  
   
   
   overriding:
