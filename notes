@@ -374,11 +374,34 @@ output:
  }
  
  
+ --------------------------------------------------------------------------------------------------------
  
+ 1. Using Object Oriented Programming
  
-  
-  
-  
+   Distance between two point
+   Distance between three points
+   
+   class Point2D
+   		 x,y;
+   		 double distance(Point2D);
+   		 
+   		 
+   class Point3D
+         double distance(Point3D)
+  		
+2. Printer
+       print()
+
+       IBM
+       Lenovo
+       Dell
+       
+       Message: "Your printing job is started by Dell"
+       
+       
+       1. IBM 2. Lenovo 3. Dell
+       
+  	   Factory Method        
   
   
   
