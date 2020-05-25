@@ -403,7 +403,15 @@ output:
        
   	   Factory Method        
   
-  
+ Collection:
+ 
+      java.util
+      
+
+https://docs.oracle.com/javase/tutorial/collections/intro/index.html
+	Interface
+	Implementations
+	Algorithms      
   
   
   
@@ -419,7 +427,7 @@ https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html
 
 Inner Class
 Lambda
-Collection
+
 List, Set, Map, Streams
 Reflection
 Threads

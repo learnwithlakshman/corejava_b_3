@@ -1,11 +1,8 @@
 package com.lwl.cj.day25;
 
-import java.util.Arrays;
-
 public final class EmployeeService implements IEmployeeService {
 
 	private static EmployeeService employeeService;
-
 	private Employee[] arr;
 	private int count = 0;
 
@@ -23,7 +20,7 @@ public final class EmployeeService implements IEmployeeService {
 	@Override
 	public int addEmployee(Employee employee) {
 		if (count == arr.length) {
-			Employee[] temp = new Employee[count + 5];
+			Employee[] temp = new Employee[count + count>>1];
 			System.arraycopy(arr, 0, temp, 0, arr.length);
 			arr = temp;
 		}
@@ -43,15 +40,10 @@ public final class EmployeeService implements IEmployeeService {
 				Employee[] temp = new Employee[arr.length - 1];
 				if(index > 0) {
 					System.arraycopy(arr, 0, temp, 0, index);
-					System.out.println(Arrays.toString(temp));
 				}
 				System.arraycopy(arr, index + 1, temp, index, arr.length - index -1);
-				
 				arr = temp;
-				
-				System.out.println(Arrays.toString(arr));
-				count--;
-				
+		     	count--;
 				return true;
 			} else {
 				return false;
