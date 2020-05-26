@@ -9,7 +9,6 @@ public class ListExample1 {
 
 	public static void main(String[] args) {
 		List<Integer> list = new ArrayList<>();
-
 		String data = "1001,1002,1003,1004,1005,1006,1007,1008,1009,1010";
 
 		for (String ele : data.split(",")) {
@@ -75,9 +74,9 @@ public class ListExample1 {
 		System.out.println("");
 		while (literator.hasNext()) {
 			int ele = literator.next();
-			if(ele==1005)
+			if (ele == 1005)
 				literator.set(9999);
-			if(ele==1006)
+			if (ele == 1006)
 				literator.add(8888);
 			System.out.print(ele + " ");
 		}
