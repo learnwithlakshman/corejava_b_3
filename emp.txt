@@ -8,3 +8,9 @@
 1008,John,24,CS
 1010,Krish,45,IS
 1020,Kiran,25,EC
+1005,Amala,22,IS
+1006,Charan,33,CS
+1007,Kaml,31,IS
+1008,John,24,CS
+1010,Krish,45,IS
+1020,Kiran,25,EC

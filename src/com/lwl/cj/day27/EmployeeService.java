@@ -17,10 +17,14 @@ public class EmployeeService {
 			empList = lines.stream().map(line -> {
 				return mapper(line);
 			}).collect(Collectors.toList());
-			System.out.println(empList);
+		
 		} catch (Exception e) {
 			System.out.println("While loading data from file:" + e);
 		}
+	}
+	
+	public List<Employee> getEmployees(){
+		return empList;
 	}
 
 	public List<Employee> search(Predicate<Employee> empPre) {
