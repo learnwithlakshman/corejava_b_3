@@ -430,9 +430,13 @@ Lambda
 
 List, Set, Map, Streams
 Reflection
+
 Threads
-JDBC
+SQL,JDBC
+
 
 https://jsltech.blogspot.com/2014/08/java-programming-interview-questions.html
+
+https://jsltech.blogspot.com/search?q=reflection+api
 
  

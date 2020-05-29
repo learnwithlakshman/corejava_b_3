@@ -7,6 +7,9 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 import com.lwl.cj.day27.Employee;
 import com.lwl.cj.day27.EmployeeService;
@@ -37,6 +40,7 @@ class UserService {
 
 			lines = Files.readAllLines(Paths.get("users.csv"));
 			
+		    map = lines.stream().map(line->mapper(line)).collect(Collectors.toMap(User::getName, Function.identity()));
 			lines.stream().map(line->mapper(line)).forEach(e->{
 					map.put(e.getEmail(), e);
 			});
