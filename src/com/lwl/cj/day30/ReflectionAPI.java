@@ -1,6 +1,8 @@
 package com.lwl.cj.day30;
 
 import java.io.FileInputStream;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Properties;
 
 interface Greetings {
@@ -35,9 +37,13 @@ public class ReflectionAPI {
 			String clsName = properties.getProperty("greetings");
 			Class c = Class.forName(clsName);
 			Greetings obj = (Greetings) c.newInstance();
-			System.out.println(c.getMethod("message",null).invoke(obj, null));
+			System.out.println(c.getMethod("message", null).invoke(obj, null));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
+	
+	
+
+	
 }
