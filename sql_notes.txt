@@ -1,0 +1,100 @@
+What is a DBMS?
+---------------
+
+A database management system (DBMS) is a software used to store and manage data. It guarantees the quality, durability, and confidentiality of information
+
+
+RDBMS
+-------------
+
+RDBMS stands for Relational Database Management System
+
+RDBMS is the basis for SQL, and for all modern database systems such as MS SQL Server, IBM DB2, Oracle, MySQL, and Microsoft Access
+
+The data in RDBMS is stored in database objects called tables. A table is a collection of related data entries and it consists of columns and rows
+
+
+What is SQL?
+-------------
+
+Structured Query Language (SQL) is the standard language for data manipulation in a DBMS. In in simple words its used to talk to the data in a DBMS
+
+SQL commands: 
+
+DDL(Data Definition Language)      : Create, Alter, Drop, Truncate
+DQL(Data Query Language)           : Select
+DML(Data Manipulation Language)    : Insert, Delete, Update
+DCL(Data Control Language)         : Grant, Revoke
+TCL(Transaction Control Language)  : Commit, Rollback, Save point
+
+
+https://dev.mysql.com/downloads/mysql/
+
+MySQL - Server  : 3306
+MySQL - Client  : commandline tool
+MySQL workbench : GUI tool 
+
+mysql -u username -p (Enter)
+
+Create database:
+
+	create database <database_name>
+
+Change Database:
+
+	use <database_name>
+
+Create Table:
+	
+	create table product(pid int,pname varchar(100));
+
+
+
+Constraints:
+------------
+Constraints are the rules enforced on the data columns of a table. These are used to limit the type of data that can go into a table. This ensures the accuracy and reliability of the data in the database
+   
+	1. Primary key
+	2. Not null
+	3. Unique
+	4. Foreign key
+	5. Default
+	6. Check 
+
+Constraints could be on :
+	
+	Table Level	
+	Column Level:
+
+Composite Primary key: 
+
+    Composite key, or composite primary key, refers to cases where more than one column is used to specify the primary key of a table.
+
+
+Numeric Data Type        : INT, FLOAT  
+
+Date and Time Data Type  : DATE, DATETIME
+
+String Data Types        : VARCHAR, CHAR
+
+
+Import and Export Data
+----------------------
+
+Export:
+	mysqldump -u username -p database_name > file.sql	
+Import: 
+	mysql -u username -p database_name < file.sql
+
+
+
+Creating Tables:
+	
+	
+
+
+
+
+
+
+

@@ -432,8 +432,29 @@ List, Set, Map, Streams
 Reflection
 
 Threads
+------------------------------------------------------------
+SQL- MySQL
 
-SQL,JDBC
+DDL
+DML
+DQL
+TCL
+DCL
+
+Operators:
+
+CRUD
+
+inner queries 
+join
+
+procedure
+
+-----------------------------------------------------------
+Maven
+JDBC
+-----------------------------------------------------------
+
 
 
 

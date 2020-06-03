@@ -17,6 +17,13 @@ class SeqGenerator {
 
 public class ThreadExample2 {
 	public static void main(String[] args) {
+		
+		try {
+			System.out.println("Please wait.... your test is being prepared...");
+			Thread.sleep(1000);
+		}catch (Exception e) {
+			
+		}
 		SeqGenerator obj = new SeqGenerator();
 
 		Thread t1 = new Thread(() -> {
