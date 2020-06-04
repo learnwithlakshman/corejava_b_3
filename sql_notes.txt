@@ -92,8 +92,78 @@ Creating Tables:
 	
 	
 
+1. Get all the employee names only
+	select ename from emp;
+	
+2. Get name, job, salary of the all the employee
+    select ename as Name,job as Job, sal as Salary from emp;
+     
+3. Get name,salary,total_sal (sal + comm) of all employees 
+	select ename,sal,comm,sal + ifnull(comm,0) as total_sal from emp;
 
+Where ?
 
+4. Get all the employees who are getting salary is more than 2000
+
+	select * from emp where sal > 2000;
+
+5. Get all the employees who are getting salary is more than 2000 and display in sorting order by salary
+	select * from emp where sal > 2000 order by sal desc,empno;
+	
+6. Get the details of employee who are working for 10 or 20 or 30
+	select * from emp where deptno = 10 or deptno = 20 or deptno = 30;
+	
+#7 Get all employees whose salary is 5000, 1600, 800, 3000
+	
+    select * from emp where sal= 5000 or sal = 1600 or sal = 800 or sal = 3000;
+    select * from emp where sal in(5000,1600,800,3000);
+    
+#8 Get all the employees who are wokring dept 10 or salary is more than 2000 
+	select * from emp where deptno = 10 or sal > 2000;
+    
+#9 Get all the employees whose salary is above 2000 and below 5500
+	select * from emp where sal > 2000 and sal < 5500;
+	
+    select * from emp where sal between 3000 and 5000;
+    
+#10 Get the all the employee who are working for dept 10 and getting salary between  1500 to 5000
+    select * from emp where deptno = 10 and sal between 1500 and 5000;
+    
+#11 Get the all the employee who are working for dept 10 and getting salary between  1500 to 5000 who has no manager
+    select * from emp where deptno = 10 and sal between 1500 and 5000 and mgr is null;
+ 
+#12 Get all the employees whose name starts with letter 'S'
+	select * from emp where ename like '____';
+
+#13 Get all the job unique names
+	select distinct(job) from emp;
+    
+#14 Get unique jobs count
+	 select count(distinct(job)) from emp;
+     
+#15 Get the max,min,avg,total salary of all the employees
+	select max(sal) as Max_sal,min(sal) as Min_sal,avg(sal) as Avg_sal,sum(sal) as Total_sal,count(empno) as Emp_count from emp;
+
+#16 Get the employee count by job wise 
+	select job,count(*) from emp group by job;
+    
+#17 Get the employee count by dept and job
+	select deptno,job,count(*) from emp group by deptno,job;
+    
+#18 Get the total salary and employee count of each department 
+     select deptno,sum(sal),count(*) from emp group by deptno;
+     
+#19 Get the total salary and employee count of each department where dept has more than 3 employee
+	  select deptno,sum(sal),count(*) from emp group by deptno having count(*) > 3;
+
+#20 Get all the employee details who are working for 'SALES'
+	 select * from emp where deptno = (select deptno from dept where dname='SALES');
+     
+#21 Get all the employee who are working for 'SALES' or 'ACCOUNTING' 
+	select * from emp where deptno in (select deptno from dept where dname in ('SALES','ACCOUNTING'));
+    
+#22 Get ename,job,sal,dname,loc all the employee 
+    select e.ename,e.job,e.sal,d.dname,d.loc from emp e inner join dept d on e.deptno=d.deptno;
 
 
 
