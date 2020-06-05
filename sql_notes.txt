@@ -166,5 +166,43 @@ Where ?
     select e.ename,e.job,e.sal,d.dname,d.loc from emp e inner join dept d on e.deptno=d.deptno;
 
 
+#22 Get ename,job,sal,dname,loc of employee who is working in 'NEW YORK' getting salary more than 3000 
 
+	select e.ename,e.job,e.sal,d.dname,d.loc from emp e inner join dept d where e.deptno = d.deptno and d.loc = 'NEW YORK' and e.sal > 3000;
 
+#23 Get dname,loc,total_sal,emp_count of given department  'SALES','ACCOUNTING'
+	select d.dname,d.loc,sum(e.sal),count(*) from emp e inner join dept d where e.deptno = d.deptno and 
+	d.dname='ACCOUNTING' group by d.dname;
+#24 Get ename,job,dname,grade of all the employee 
+    select e.ename,e.job,d.dname,s.grade from emp e inner join dept d inner join salgrade s where e.deptno = d.deptno and e.sal between s.losal and s.hisal; 
+
+#25 Get all the employee with department details 
+	select e.*,d.* from emp e left joincreate_synonym_db dept d on e.deptno = d.deptno;
+	
+
+#26 Procedure to get max paid employee:
+
+	CREATE DEFINER=`lakshman`@`localhost` PROCEDURE `get_all_emp_wiht_sal_grade`()
+	BEGIN
+  		DECLARE max_sal INT DEFAULT 0;
+  		select max(sal) into max_sal from emp;
+  		select e.ename,e.job,d.dname,s.grade from emp e inner join dept d inner join salgrade s where e.deptno = d.deptno and e.sal between s.losal and s.hisal and e.sal=max_sal; 
+	END
+	
+	To call store procedure:
+		call get_all_emp_wiht_sal_grade()
+		
+		
+#27 To get total salary for the given department 
+
+	CREATE DEFINER=`lakshman`@`localhost` PROCEDURE `total_sal_by_dname`(in deptname varchar(100),out tsal float)
+		BEGIN
+			select sum(e.sal) into tsal from emp e inner join dept d where e.deptno = d.deptno
+    		and d.dname = deptname;
+		END
+
+		
+	call total_sal_by_dnam('SALES',@total_sal);
+	select @total_sal
+	
+	
